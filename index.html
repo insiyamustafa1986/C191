@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Marker based AR Portfolio</title>
+
+  <!-- Import A-Frame and then AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <!-- A-frame scene -->
+  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam; 
+  sourceWidth:1280; sourceHeight:960; 
+  displayWidth: 1280; displayHeight: 960; 
+  debugUIEnabled: false;" >
+
+  <a-assets>
+    <img id="card1" src="./images/welcome.png">
+    <img id="card2" src="./images/harry potter.png">
+    <img id="card3" src="./images/hermione granger.png">
+    <img id="card4" src="./images/ron weasley.png">
+    <img id="card5" src="./images/ginny weasley.png">
+    <img id="card6" src="./images/draco malfoy.png">
+    <img id="card7" src="./images/luna lovegood.png">
+    <img id="card8" src="./images/albus dumbledore.png">
+    <img id="card9" src="./images/lord voldemorth.png">
+
+  </a-assets>
+
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173323.patt">     
+    <a-plane src="#card1" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Harry Potter -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173512.patt">     
+    <a-plane src="#card2" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Hermione Granger -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173647.patt">     
+    <a-plane src="#card3" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Ron Weasley -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173734.patt">     
+    <a-plane src="#card4" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Ginny Weasley -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173852.patt">     
+    <a-plane src="#card5" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Draco Malfoy -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 174140.patt">     
+    <a-plane src="#card6" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Luna Lovegood -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 174436.patt">     
+    <a-plane src="#card7" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Albus Dumbledore -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 173852.patt">     
+    <a-plane src="#card7" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  <!-- Lord Voldemort -->
+  <a-marker type="pattern" url="D:\Zainab\C190\markers\pattern-Screenshot 2024-01-09 174242.patt">     
+    <a-plane src="#card8" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0"></a-plane>
+  </a-marker>
+  
+
+</a-scene>
+</body>
+
+</html>
